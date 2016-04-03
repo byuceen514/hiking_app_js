@@ -12,7 +12,7 @@ class HikingTrailExplorer(TethysAppBase):
     package = 'hiking_app_js'
     root_url = 'hiking-app-js'
     color = '#34495e'
-    description = 'Place a brief description of your app here.'
+    description = 'Use this app to buffer a point and plot a hiking trail.'
     enable_feedback = False
     feedback_emails = []
 
@@ -32,6 +32,9 @@ class HikingTrailExplorer(TethysAppBase):
                     UrlMap(name='bufferpoint',
                            url='bufferpoint',
                            controller='hiking_app_js.controllers.bufferpoint'),
+                    UrlMap(name='hikingmap',
+                           url='hikingmap',
+                           controller='hiking_app_js.controllers.hikingmap'),
 
         )
 

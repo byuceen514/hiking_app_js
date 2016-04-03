@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cf8707a-edcd-4b8c-9a61-a6981d10f368" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/bufferpoint.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/hikingmap.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/viewshed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tethysapp/hiking_app_js/app.py" afterPath="$PROJECT_DIR$/tethysapp/hiking_app_js/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tethysapp/hiking_app_js/controllers.py" afterPath="$PROJECT_DIR$/tethysapp/hiking_app_js/controllers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tethysapp/hiking_app_js/public/css/main.css" afterPath="$PROJECT_DIR$/tethysapp/hiking_app_js/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tethysapp/hiking_app_js/public/js/main.js" afterPath="$PROJECT_DIR$/tethysapp/hiking_app_js/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/base.html" afterPath="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/home.html" afterPath="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/hikingmap.html" afterPath="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/hikingmap.html" />
     </list>
     <ignored path="tethysapp-hiking_app_js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
+              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -105,16 +95,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/public/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/map.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -128,10 +108,10 @@
       <file leaf-file-name="hikingmap.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/hikingmap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.47095436">
+              <caret line="194" column="14" selection-start-line="194" selection-start-column="14" selection-end-line="194" selection-end-column="14" />
               <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,13 +135,13 @@
         <option value="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/map.html" />
         <option value="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/home.html" />
         <option value="$PROJECT_DIR$/tethysapp/hiking_app_js/public/css/main.css" />
-        <option value="$PROJECT_DIR$/tethysapp/hiking_app_js/app.py" />
         <option value="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/viewshed.html" />
         <option value="$PROJECT_DIR$/tethysapp/hiking_app_js/public/js/main.js" />
         <option value="$PROJECT_DIR$/tethysapp/hiking_app_js/controllers.py" />
-        <option value="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/hikingmap.html" />
         <option value="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/bufferpoint.html" />
         <option value="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/base.html" />
+        <option value="$PROJECT_DIR$/tethysapp/hiking_app_js/app.py" />
+        <option value="$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/hikingmap.html" />
       </list>
     </option>
   </component>
@@ -760,30 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="11.115385">
@@ -800,28 +756,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/controllers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/bufferpoint.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4285715">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/viewshed.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -834,12 +772,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/hikingmap.html">
+    <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/public/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.063197024">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/viewshed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/controllers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tethysapp/hiking_app_js/templates/hiking_app_js/hikingmap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47095436">
+          <caret line="194" column="14" selection-start-line="194" selection-start-column="14" selection-end-line="194" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

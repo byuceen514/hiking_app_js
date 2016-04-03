@@ -59,11 +59,11 @@
         parser, registry
       ) {
         parser.parse();
-
+        <!--Center on Utah-->
         map = new Map("map", {
           basemap: "streets",
-          center: [-15.469, 36.428],
-          zoom: 3
+          center: [-111.08, 39.66],
+          zoom: 7
         });
 
         var gp = new Geoprocessor("http://geoserver.byu.edu/arcgis/rest/services/TMR/TrailPathModel3/GPServer/TrailPathModel");
@@ -185,7 +185,14 @@
       });
     </script>
   </head>
+  <h1>Hiking Trail Explorer</h1>
+  <h3>Draw the trail on the map. A graph will appear above the map after the calculations are completed.</h3>
+  <h4>This tools will only work in Utah.</h4>
   <body class="nihilo">
+
+  <span>Top of Graph</span>
+  <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+  <span>Bottom of Graph</span>
 
   <div id="mainWindow">
     <div id="header">
@@ -194,7 +201,7 @@
       <button data-dojo-type="dijit/form/Button">Freehand Polyline</button>
     </div>
     <div id="map"></div>
-    <div id="container" style="min-width: 310px; height: 250px; margin: 0 auto"></div>
+
   </div>
 
   </body>
