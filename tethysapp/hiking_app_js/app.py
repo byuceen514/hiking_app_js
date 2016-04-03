@@ -26,6 +26,13 @@ class HikingTrailExplorer(TethysAppBase):
         url_maps = (UrlMap(name='home',
                            url='hiking-app-js',
                            controller='hiking_app_js.controllers.home'),
+                    UrlMap(name='viewshed',
+                           url='viewshed',
+                           controller='hiking_app_js.controllers.viewshed'),
+                    UrlMap(name='bufferpoint',
+                           url='bufferpoint',
+                           controller='hiking_app_js.controllers.bufferpoint'),
+
         )
 
         return url_maps

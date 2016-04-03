@@ -1,10 +1,16 @@
 {% extends "hiking_app_js/base.html" %}
 
 {% block app_content %}
-  <h1>Welcome!</h1>
-  <p>Congratulations on creating a new Tethys app!</p>
+  <h1>Viewshed Calculator</h1>
 
-  <div id="map" class="map"> </div>
+
+
+
+    <div id="mapDiv" class="mapDiv"></div>
+    <div id="info" class="esriSimpleSlider">
+      Click on map to execute ViewShed GP Task.
+    </div>
+
 {% endblock %}
 
 {% block app_actions %}
