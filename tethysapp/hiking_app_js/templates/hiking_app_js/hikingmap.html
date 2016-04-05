@@ -63,8 +63,10 @@
         map = new Map("map", {
           basemap: "streets",
           center: [-111.08, 39.66],
-          zoom: 7
+          zoom: 8
         });
+        var UtahTrailsLayer = new esri.layers.ArcGISDynamicMapServiceLayer("http://geoserver.byu.edu/arcgis/rest/services/HikingExplorerJS/Trails_Utah/MapServer");
+        map.addLayer(UtahTrailsLayer);
 
         var gp = new Geoprocessor("http://geoserver.byu.edu/arcgis/rest/services/TMR/TrailPathModel3/GPServer/TrailPathModel");
         gp.setOutputSpatialReference({
@@ -142,15 +144,18 @@
         },
         xAxis: {
             allowDecimals: false,
+            title: {
+                text: 'Trail Distance, miles (approximate)'
+            },
             labels: {
                 formatter: function () {
-                    return this.value; // clean, unformatted number for year
+                    return this.value/20; // clean, unformatted number for year
                 }
             }
         },
         yAxis: {
             title: {
-                text: 'Height (ft)'
+                text: 'Height, ft (approximate)'
             },
             labels: {
                 formatter: function () {

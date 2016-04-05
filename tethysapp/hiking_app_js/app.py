@@ -35,6 +35,9 @@ class HikingTrailExplorer(TethysAppBase):
                     UrlMap(name='hikingmap',
                            url='hikingmap',
                            controller='hiking_app_js.controllers.hikingmap'),
+                    UrlMap(name='help',
+                           url='help',
+                           controller='hiking_app_js.controllers.help'),
 
         )
 

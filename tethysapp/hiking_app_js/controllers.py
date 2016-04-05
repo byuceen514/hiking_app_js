@@ -35,3 +35,11 @@ def hikingmap(request):
     context = {}
 
     return render(request, 'hiking_app_js/hikingmap.html', context)
+
+def help(request):
+    """
+    Controller for the app home page.
+    """
+    context = {}
+
+    return render(request, 'hiking_app_js/help.html', context)
