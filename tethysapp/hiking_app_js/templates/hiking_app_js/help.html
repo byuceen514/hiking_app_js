@@ -1,30 +1,60 @@
 {% extends "hiking_app_js/base.html" %}
 
+{% load staticfiles %}
+
+
 {% block app_content %}
+
+  <style>
+    p {
+      width: 50em;
+      word-wrap: normal;
+    }
+  </style>
+
   <h1>Use Guide and Help Documentation</h1>
-  <p>Read carefully!</p>
+  <p>The following sections include the User Guide and Technical documentation for the Hiking Trail Explorer App.</p>
 
-  <h2>User</h2>
-  <p>
+  <h2><b>User Guide</b></h2>
+  <h3>Overview</h3>
+  <p>The purpose of the “Hiking Explorer” tool is to allow users to draw a desired hiking path in the state of Utah and view the elevation gains and losses. The user draws the path on a basemap by clicking and drawing a polyline. The map also displays Utah County lines in addition to existing trails. The tool is located in a Tethys based web application.   </p>
+  <h3>Accessing Website</h3>
+  <p>The “Hiking Explorer” web app can be accessed on the BYU server. This web-site is intended to be an educational tool, for viewing elevation gains and losses for any possible trail or route in the state of Utah.</p>
+  <p>The “Hiking Explorer” app should be compatible with Internet Explorer, Mozilla Firefox, and Google Chrome.</p>
+  <h3>Using the Website</h3>
+  <p>The following figures show the various elements of the “Hiking Explorer” web interface. The key elements of the user interface include the map interface and navigation buttons.</p>
 
-    Using the Interface
+  <img src="/static/hiking_app_js/images/line_buttons.png" alt="Line Buttons Example" style="width:600px;height:300px;">
 
-
-    Disclaimer
-
-
-
-
-  </p>
-
-
-  <h2>Technical</h2>
-  <p>inset Text here</p>
-  <p>Click the button --> Draw line --> Server does the geoprocessing --> Graph Appears</p>
+  <br> <br>
 
 
+  <img src="/static/hiking_app_js/images/elev_prof.jpg" alt="Elevation Profile Example" style="width:600px;height:400px;">
+  <p>The map interface window allows the user to manipulate the map’s extents. Left-click and dragging the mouse will allow the user to pan the map’s display. The mouse scroll wheel, or the “+” and “-” buttons on the map interface, allows the user to zoom in and out of the map.</p>
+  <p> The user can draw a polyline or free hand polyline by first clicking on either of the buttons below the “Draw:” text. This polyline should represent a trail the user is interested in. Once the user is done drawing the polyline, an elevation profile showing elevation (ft) vs distance (miles) will appear above the interactive map. </p>
+  <p>The navigation pane allow the user to go to the Homepage, the Hiking Tool, the Help Documentation, as well as various useful links. </p>
 
-{% endblock %}
+
+  <h2><b>Technical Documentation</b></h2>
+  <h3>Technical Specifications</h3>
+  <p>The Hiking Trail Explorer App was developed as part of the GIS Programming course taught through the Civil and Environmental Engineering Department at Brigham Young University (BYU). It was built using Tethys Platform, a web development framework created at BYU that simplifies the process of creating interactive geospatial web apps. Though Tethys Platform provides a basic design template and framework, the content, layout, and interactive elements unique to the Hiking Trail Explorer were co-created by Jasmyn Harper and Samuel Mineer, with help from Sarva Pulla and Dr. Dan Ames.</p>
+  <h3>License</h3>
+  <p>The web-site content is licensed under the MIT License as follows:</p>
+  <p>Copyright (c) 2016 Samuel Mineer and Jasmyn Harper <br></p>
+  <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+  <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+  <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+  <h3>Installation and Setup</h3>
+  <p>The Tethys Platform, and thus the Hiking Trail Explorer app, must be set up to run on a Linux operating system. Linux, as an open-source operating system, is free to obtain and install. If a physical machine is not available to run Linux as its native operating system, virtual machine programs, such as <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>, are available for free and can be downloaded and installed on both Windows and Mac operating systems.</p>
+  <p>Once one has access to a Linux operating system, Tethys can be installed by following the instruction given on the <a href="http://docs.tethysplatform.org/en/latest/installation.html">Tethys Documentation Page</a>. Another option is to install a Linux virtual image that has Tethys already pre-configured. This image can be obtained by contacting <a href="http://www.danames.com/">Dr. Daniel Ames</a> at Brigham Young University.</p>
+  <p>Once Tethys has been installed, the source code for Hiking Trail Explorer app can be obtained and downloaded from <a href="https://github.com/byuceen514/hiking_app_js">GitHub</a>. Once the source code is stored locally on your computer, the command line must be used to run the setup.py script that is located in the root folder with the “develop” parameter (“python setup.py develop”). This command must be run while in the Tethys python environment (“. /usr/lib/tethys/bin/activate”).</p>
+  <p>Finally, the server can be started (“tethys manage start”), and you can navigate to the Tethys Apps Library, which is defaulted to port 8000 of the <a href="http://127.0.0.1:8000/apps/">localhost</a>. If everything was done correctly, you should see the Tethys Apps Library page with an icon for the Hiking Trail Explorer. This icon can then be clicked to start the app.</p>
+  <h3>User Interface Overview</h3>
+  <p>The Hiking Trail Explorer web app is an interactive mapping environment where the data being displayed on the page is updated based on the user’s actions. The only action available to the user is using the “Polyline” and “Freehand Polyline” buttons to delineate and graph the profile of the hiking trail. These buttons allow the user to virtually draw a trial of interest, with existing trails in Utah and the county borders on the map. The resulting graph displays the elevation gains and losses and the approximate length of the proposed hiking trail.</p>
+  <h3>How It Works</h3>
+  <p>When the user selects either the “Polyline” or “Freehand Polyline” button, they are able to draw a line of interest for a hiking trail. Once the user has completed drawing the line, the line is sent to the geoserver, where the geoprocessing takes place. The geoserver will use to line drawn by the user to profile the length and elevation of the hiking trail, which creates a table of data points. These data points are sent back to the user from the server and a plot is created displaying the length and elevation of the hiking trail. This process is repeated for each new line drawn by the user with the “Polyline” or “Freehand Polyline” buttons.</p>
+
+{% endblock %}.
 
 {% block app_actions %}
 <span>Created by Sam Mineer and Jasmyn Harper, Brigham Young University.</span>
