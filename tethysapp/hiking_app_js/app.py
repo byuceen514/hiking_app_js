@@ -8,11 +8,11 @@ class HikingTrailExplorer(TethysAppBase):
 
     name = 'Hiking Trail Explorer'
     index = 'hiking_app_js:home'
-    icon = 'hiking_app_js/images/icon.gif'
+    icon = 'hiking_app_js/images/hikers.jpg'
     package = 'hiking_app_js'
     root_url = 'hiking-app-js'
-    color = '#34495e'
-    description = 'Use this app to buffer a point and plot a hiking trail.'
+    color = '#228b22'
+    description = 'Use this app to plot a hiking trail in Utah.'
     enable_feedback = False
     feedback_emails = []
 

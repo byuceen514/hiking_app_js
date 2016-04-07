@@ -2,8 +2,6 @@
 
 {% block app_content %}
 
-
-
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no">
@@ -192,12 +190,13 @@
   </head>
   <h1>Hiking Trail Explorer</h1>
   <h3>Draw the trail on the map. A graph will appear above the map after the calculations are completed.</h3>
-  <h4>This tools will only work in Utah.</h4>
+  <h5><b>This tool will only work in Utah.</b></h5>
   <body class="nihilo">
 
-  <span>Top of Graph</span>
+  <span>Trail Profile Graph</span>
   <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-  <span>Bottom of Graph</span>
+  <span>Interactive Map</span>
+
 
   <div id="mainWindow">
     <div id="header">
@@ -217,6 +216,9 @@
 {% endblock %}
 
 {% block app_actions %}
-  <a href="" class="btn btn-default">Next</a>
-  <a href="map" class="btn btn-default">Back</a>
+<span>Created by Sam Mineer and Jasmyn Harper, Brigham Young University.</span>
+<br>
+<span>Disclaimer: Authors not responsible for lost hikers. Please call 911 if a hiker is lost.</span>
+
+
 {% endblock %}
