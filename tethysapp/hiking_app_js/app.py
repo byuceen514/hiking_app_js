@@ -12,7 +12,7 @@ class HikingTrailExplorer(TethysAppBase):
     package = 'hiking_app_js'
     root_url = 'hiking-app-js'
     color = '#228b22'
-    description = 'Use this app to plot a hiking trail in Utah.'
+    description = 'Use this app to plot the elevation profile of a hiking trail in Utah, as drawn by the user. Disclaimer: Authors not responsible for lost hikers. Please call 911 if a hiker is lost.'
     enable_feedback = False
     feedback_emails = []
 
